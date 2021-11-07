@@ -16,6 +16,8 @@ public class Main {
         MyLinkedList.addNodeInside(5, 2);
         MyLinkedList.addNodeInside(7, 10);
 
+        MyLinkedList.delNode(5);
+
         MyLinkedList.printAll();
     }
 }
