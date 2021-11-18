@@ -39,5 +39,37 @@ public class DoubleLinkedList<T> {
             }
         }
     }
+
+    public T searchFromHead(T isData) {
+        if (this.head == null) {
+            return null;
+        } else {
+            Node<T> node = this.head;
+            while(node != null) {
+                if (node.data == isData) {
+                    return node.data;
+                } else {
+                    node = node.next;
+                }
+            }
+            return null;
+        }
+    }
+
+    public T searchFromTail(T isData) {
+        if (this.tail == null) {
+            return null;
+        } else {
+            Node<T> node = this.tail;
+            while(node != null) {
+                if (node.data == isData) {
+                    return node.data;
+                } else {
+                    node = node.prev;
+                }
+            }
+            return null;
+        }
+    }
     
 }
